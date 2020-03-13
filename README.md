@@ -10,7 +10,7 @@ arg[1]: list-file to pull paths from.
 
 arg[2]: path to copy files to. This should have no whitespace. I've yet to implement a high quality argument parser and this will have to do for now.
 
-arg[3]: Add /y, /Y, y or Y in this argument slot to force file overwrite during copy.
+arg(3): Add /y, /Y, y or Y in this argument slot to force file overwrite during copy.
 
 Usage - General:
 
