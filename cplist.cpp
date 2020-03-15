@@ -15,12 +15,10 @@ int main(int argc,char**argv){
 			else{out+=c;}
 		}
 	}
-	
 	for(int i=0;i<worklist.size();i++){
-		string cmd="copy ";cmd+=worklist[i];
-		if(argc>3&&(argv[3]=="/y"||argv[3]=="/Y"||argv[3]=="Y"||argv[3]=="y")){cmd+=" /Y";}
+		string cmd="copy /y ";
+		cmd+=worklist[i];
 		cmd+=" ";cmd+=argv[2];
-		cout<<cmd;
 		system(&cmd[0]);
 	}
 	return 0;
